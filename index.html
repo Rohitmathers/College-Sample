@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Required meta tags always come first -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<title>EFG College</title>
+</head>
+<body>
+    <!--navbar area begins-->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="fa fa-bars"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png"  style="height: 95px"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item btn active"><a class="nav-link" href="#"><span class="fa fa-home fa-nav-cog fa-lg"></span> Home</a></li>
+                        <li class="nav-item btn"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg fa-nav-cog"></span> About</a></li>
+                        <li class="nav-item btn"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-nav-cog fa-lg"></span> Contact</a></li>
+                </ul>
+                <span class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtnbtn btn btn-group btn-primary active fa fa-sign-in" id="loginBtn" style="padding: 20px; width: 160px;"> Login</button>
+                        <div class="dropdown-content">
+                            <a class="dropbtnbtn btn-group btn-primary active" data-toggle="modal" data-target="#StudentModal" id="StudentloginBtn" >Student Login</a>
+                            <a class="dropbtnbtn btn-group btn-primary active" data-toggle="modal" data-target="#AluminiModal" id="AluminiloginBtn" >Alumini Login</a>
+                            <a class="dropbtnbtn btn-group btn-primary active"data-toggle="modal" data-target="#TeacherModal" id="TeacherloginBtn" >Teacher Login</a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!--navbar area ends-->
+
+    <!--modal begins-->
+    <div id="StudentModal" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">              
+                    <h4 class="modal-title">Student Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="/examples/actions/confirmation.php" method="post">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" class="form-control" placeholder="Registeration-No." required="required">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" class="form-control" placeholder="Password" required="required">                 
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="TeacherModal" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">              
+                <h4 class="modal-title">Teacher Login</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="form-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control" placeholder="Facalty UserID" required="required">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control" placeholder="Password" required="required">                 
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="AluminiModal" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">              
+                <h4 class="modal-title">Alumini Login</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="form-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control" placeholder="Roll No." required="required">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control" placeholder="Password" required="required">                 
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--modal ends-->
+
+    <!-- slider area begins-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/1.jpg" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+    <h2>Education for Graduation</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/2.jpg" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+    <h2>Education for Graduation</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
+      <div class="carousel-caption d-none d-md-block">
+    <h2>Education for Graduation</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/4.jpg" alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+    <h2>Education for Graduation</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!--slider area ends-->
+
+<!--textblock-area start-->
+    <div class="textblock-area mt-80">
+        <div class="container textblock-inner">
+            <div class="row" style=" padding: 55px;">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="text-block col-12">
+                        <h4><i class="ion-ios-play"></i> Best Courses available</h4><br>
+                        <p>B.TECH/B.TECH(LATEREL)
+                        BCA/B.Sc/B.Sc(LATEREL)
+                        MCA/MBA/PGDM MORE...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mt-sm-20">
+                    <div class="text-block col-12">
+                        <h4><i class="ion-md-planet"></i> Amazing Infrastrcture</h4><br>
+                        <p>The infrastructure of EFG offers the finest in resources and facilities, which meets the terms with university & AICTE requirements. A dual approach to education allows for holistic development of its students.   
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 mt-sm-20">
+                    <div class="text-block col-12">
+                        <h4><i class="ion-md-book"></i> Professional Facalty</h4><br>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--textblock-area end-->
+    <!--e-notice-area start-->
+    <div class="events-and-blog-area mt-60" style="    margin-top: 60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h2 style="margin-block-end: 35px;">E-Notice</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-60">
+                <div class="col-lg-6">
+                    <div class=" textblock-inner event-single mt-sm-30">
+                        <div class="event-inner z-index">
+                            <div class="event-date">
+                                <span>05</span>
+                                <small>JUNE 2020</small>
+                            </div>
+                            <div class="event-desc">
+                                <h3><a href="events-details.html">
+                                    ONLINE RECHECKING OF ODD SEMESTER (Regular/Back) EXAMINATIONS: 2019-20-KISD</a></h3>
+                                <a href="#" class="readmore">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-single mt-20 textblock-inner">
+                        <div class="event-inner z-index">
+                            <div class="event-date">
+                                <span>22</span>
+                                <small>JUNE 2020</small>
+                            </div>
+                            <div class="event-desc">
+                                <h3><a href="events-details.html">
+                                    Re-checking Odd Semester (Reg. & Back) 2019-20 of COEB</a></h3>             
+                                <a href="#" class="readmore">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-single ds-md-none mt-20 textblock-inner">
+                        <div class="event-inner z-index">
+                            <div class="event-date">
+                                <span>05</span>
+                                <small>JUNE 2020</small>
+                            </div>
+                            <div class="event-desc">
+                                <h3><a href="events-details.html">
+                                    On line Internal Examination Notice of 2nd,4th & 6th Sem 20-21 of KSE</a></h3>
+                                <a href="#" class="readmore">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="event-single mt-sm-30 textblock-inner">
+                        <div class="event-inner z-index">
+                            <div class="event-date">
+                                <span>01</span>
+                                <small>JUNE 2020</small>
+                            </div>
+                            <div class="event-desc">
+                                <h3><a href="events-details.html">
+                                    ONLINE 2ND INTERNAL EXAMINATION FOR MBA-KBS & COEB STUDENTS</a></h3>
+                                <a href="#" class="readmore">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-single mt-20 textblock-inner">
+                        <div class="event-inner z-index">
+                            <div class="event-date">
+                                <span>30</span>
+                                <small>MAY<br> 2020</small>
+                            </div>
+                            <div class="event-desc">
+                                <h3><a href="events-details.html">
+                                    Notice regarding student login</a></h3>
+                                <a href="#" class="readmore">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event-single ds-md-none mt-20 textblock-inner">
+                        <div class="event-inner z-index">
+                            <div class="event-date">
+                                <span>30</span>
+                                <small>MAY<br> 2020</small>
+                            </div>
+                            <div class="event-desc">
+                                <h3><a href="events-details.html">
+                                    6th, 4th & 2nd Semester Internal Examination 2020 of COEB</a></h3>
+                                <a href="#" class="readmore">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <!--e-notice-area end-->
+    <div class="register-area mt-58">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 textblock-inner col-sm-12" style="padding: 0px">
+                    <div class="regster-form">
+                        <div class="register-form-top">
+                            <h3>Get Details for admission!</h3>
+                        </div>
+                        <div class="register-form-inputs">
+                            <input type="text" placeholder="Your Name *" />
+                            <input type="text" placeholder="Email *" />
+                            <input type="text" placeholder="Phone *" />
+                            <label for="course">Choose your Course</label>
+                                <select name="course" id="course" style="font-family: inherit;font-stretch: inherit;padding-left: 18px;font-weight: 500;scroll-padding: initial;scroll-behavior: smooth;margin: 20px;">
+                                    <option value="BTECH">B.TECH</option>
+                                    <option value="MTECH">M.TECH</option>
+                                    <option value="MCA">MCA</option>
+                                    <option value="PGDM">PGMD</option>
+                                    <option value="MBA">MBA</option>
+                                    <option value="IMBA">IMBA</option>
+                                    <option value="BJMC">BJMC</option>
+                                    <option value="MJMC">MJMC</option>
+                                    <option value="DIPLOMA">DIPLOMA</option>
+                                    <option value="BPharm">B.Pharm</option>
+                                    <option value="DPharm">D.Pharm</option>
+                                </select>
+                            <button class="btn-common btn" style="background-color: #e7e7e7; color: black;">get it now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="course-discount pt-100 pl-100">
+                        <h5>Get details of inline courses for free</h5>
+                        <h2>Register Now</h2>
+                        <p>Hurry! Next session starts in:</p>
+                        <div class="course-countdown mt-50" id="demo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--register-area end-->
+
+</body>
+<footer class="footer">
+    <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-2 ">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: black">Home</a></li>
+                        <li><a href="./aboutus.html" style="color: black">About</a></li>
+                        <li><a href="contactus.html" style="color: black">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-7 col-sm-5 offset-1">
+                    <h5>Our Address</h5>
+                    <address>
+                      B-13, RAJU BAGAN<br>
+                      KITADIH, JAMSHEDPUR<br>
+                      INDIA<br>
+                      <i class="fa fa-phone-square fa-lg fa-foot-cog"></i> +91 7903 437 756<br>
+                      <i class="fa fa-lg fa-envelope fa-foot-cog"></i> <a href="rohitojha78@gmail.com" style="color: black">rohitojha78@gmail.coom</a>
+                   </address>
+                </div>
+                    <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto ">
+                    <p>© Copyright 2021 EFG College</p>
+                </div>
+           </div>
+        </div>
+</footer>
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<script>
+    $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+</script>

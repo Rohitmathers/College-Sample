@@ -1,0 +1,305 @@
+<!-- Required meta tags always come first -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<title>About EFG</title>
+<head>
+
+</head>
+<body>
+    <!--navbar area begins-->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="fa fa-bars"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png"  style="height: 95px"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item btn"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-nav-cog fa-lg"></span> Home</a></li>
+                        <li class="nav-item btn active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg fa-nav-cog"></span> About</a></li>
+                        <li class="nav-item btn"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-nav-cog fa-lg"></span> Contact</a></li>
+                </ul>
+                <span class="nav-item">
+                    <div class="dropdown">
+                        <button class="dropbtnbtn btn btn-group btn-primary active fa fa-sign-in" id="loginBtn" style="padding: 20px; width: 160px;"> Login</button>
+                        <div class="dropdown-content">
+                            <a class="dropbtnbtn btn-group btn-primary active" data-toggle="modal" data-target="#StudentModal" id="StudentloginBtn" >Student Login</a>
+                            <a class="dropbtnbtn btn-group btn-primary active" data-toggle="modal" data-target="#AluminiModal" id="AluminiloginBtn" >Alumini Login</a>
+                            <a class="dropbtnbtn btn-group btn-primary active"data-toggle="modal" data-target="#TeacherModal" id="TeacherloginBtn" >Teacher Login</a>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!--navbar area ends--> 	<br>
+    <!--modal begins-->
+    <div id="StudentModal" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">              
+                    <h4 class="modal-title">Student Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="/examples/actions/confirmation.php" method="post">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            <input type="text" class="form-control" placeholder="Registeration-No." required="required">
+                        </div>
+                        <div class="form-group">
+                            <i class="fa fa-lock"></i>
+                            <input type="password" class="form-control" placeholder="Password" required="required">                 
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="TeacherModal" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">              
+                <h4 class="modal-title">Teacher Login</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="form-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control" placeholder="Facalty UserID" required="required">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control" placeholder="Password" required="required">                 
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="AluminiModal" class="modal fade">
+    <div class="modal-dialog modal-login">
+        <div class="modal-content">
+            <div class="modal-header">              
+                <h4 class="modal-title">Alumini Login</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="form-group">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control" placeholder="Roll No." required="required">
+                    </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock"></i>
+                        <input type="password" class="form-control" placeholder="Password" required="required">                 
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--modal ends-->
+    <!--SECTION START-->
+    <section>
+            <div class="container">
+                <div class="row row-header">
+                    <div class="card ">
+                    <div class="col-12 card-header">
+                        <h1>About Education For Graduation</h1>
+                    </div>
+                    <div class="col-12 card-body">
+                           <p style="text-align: justify; color: #1B10AD">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                           cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+                       <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                       cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br>
+                </div>
+            </div><br>
+                <div id="accordion" class="shadow">
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="peterhead">
+                        <h3 class="mb-0">
+                            <a data-toggle="collapse" data-target="#peter">
+                            MISSION
+                            </a>
+                        </h3>
+                        </div>
+                        <div class="collapse show" id="peter" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                            <div class="card-header" role="tab" id="dannyhead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#danny">
+                                VISION
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="danny" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                            <div class="card-header" role="tab" id="agumbehead">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#agumbe">
+                                GOALS
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="collapse" id="agumbe" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="row row-content shadow" style="margin-top: 20px">
+           <div class="col-12 col-sm-9">
+               <h2>Facts and Figures</h2>     
+           </div>
+           <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr >
+                                <th>&nbsp;</th>
+                                <th>2017</th>
+                                <th>2018</th>
+                                <th>2019</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-primary">
+                                <th>Employees</th>
+                                <td>15</td>
+                                <td>30</td>
+                                <td>40</td>
+                            </tr>
+                            <tr >
+                                <th>Students</th>
+                                <td>15000</td>
+                                <td>45000</td>
+                                <td>100,000</td>
+                            </tr>
+                            <tr class="table-success">
+                                <th>Special Events</th>
+                                <td>3</td>
+                                <td>20</td>
+                                <td>45</td>
+                            </tr>
+                            <tr>
+                                <th>Highest Package</th>
+                                <td>₹6,21,325</td>
+                                <td>₹8,50,375</td>
+                                <td>₹9,00,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+             </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+</body><br>
+<footer class="footer">
+	<div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-2 ">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: black">Home</a></li>
+                        <li><a href="./aboutus.html" style="color: black">About</a></li>
+                        <li><a href="contactus.html" style="color: black">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-7 col-sm-5 offset-1">
+                    <h5>Our Address</h5>
+                    <address>
+                      B-13, RAJU BAGAN<br>
+                      KITADIH, JAMSHEDPUR<br>
+                      INDIA<br>
+                      <i class="fa fa-phone-square fa-lg fa-foot-cog"></i> +91 7903 437 756<br>
+                      <i class="fa fa-lg fa-envelope fa-foot-cog"></i> <a href="rohitojha78@gmail.com" style="color: black">rohitojha78@gmail.coom</a>
+                   </address>
+                </div>
+                    <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto ">
+                    <p>© Copyright 2021 EFG College</p>
+                </div>
+           </div>
+        </div>
+</footer>
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
